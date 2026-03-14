@@ -1,0 +1,49 @@
+body{
+font-family: Arial;
+margin:0;
+background:#f4f4f4;
+}
+
+header{
+background:#0c6b3f;
+color:white;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+font-weight:bold;
+}
+
+section{
+padding:20px;
+max-width:900px;
+margin:auto;
+background:white;
+margin-top:10px;
+}
+
+.btn{
+background:#0c6b3f;
+color:white;
+padding:12px 20px;
+text-decoration:none;
+display:inline-block;
+margin-top:10px;
+}
+
+.logo{
+width:220px;
+max-width:90%;
+display:block;
+margin:auto;
+margin-bottom:10px;
+}
+
+.lang button{
+margin:5px;
+padding:5px 10px;
+}
