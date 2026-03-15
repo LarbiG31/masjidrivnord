@@ -10,28 +10,16 @@
 </head>
 <body>
 
-<div class="lang-switcher">
-    <button onclick="setLang('en')">EN</button>
-    <button onclick="setLang('fr')">FR</button>
-    <button onclick="setLang('ar')">AR</button>
-</div>
+<div class="lang-switcher"><button onclick="setLang('en')">EN</button><button onclick="setLang('fr')">FR</button><button onclick="setLang('ar')">AR</button></div>
 
-<header>
-    <div class="header-container">
-        <div class="header-left">
-            <img src="logo.png" class="logo-small" alt="Logo">
-            <h1 data-en="Contact Us" data-fr="Contactez-nous" data-ar="اتصل بنا">Contact Us</h1>
-        </div>
-        <nav class="header-right">
-            <div class="nav-links">
-                <a href="index.html" data-en="Home" data-fr="Accueil" data-ar="الرئيسية">Home</a>
-                <a href="prayer.html" data-en="Prayer" data-fr="Prière" data-ar="الصلاة">Prayer</a>
-                <a href="contact.html" data-en="Contact" data-fr="Contact" data-ar="اتصل">Contact</a>
-            </div>
-            <div class="social-links">
-                <a href="https://www.facebook.com/share/1AmzJvjMWP/" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://chat.whatsapp.com/I94Uq8UrA2m0HjQVRyhX6O" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            </div>
+<header class="hero">
+    <img src="logo.png" class="logo-corner" alt="Logo">
+    <div class="hero-content">
+        <h1 data-en="Contact Us" data-fr="Contactez-nous" data-ar="اتصل بنا">Contact Us</h1>
+        <nav>
+            <a href="index.html" data-en="Home" data-fr="Accueil" data-ar="الرئيسية">Home</a>
+            <a href="prayer.html" data-en="Prayer" data-fr="Prière" data-ar="الصلاة">Prayer</a>
+            <a href="contact.html" data-en="Contact" data-fr="Contact" data-ar="اتصل">Contact</a>
         </nav>
     </div>
 </header>
@@ -39,11 +27,17 @@
 <main>
     <section class="grid">
         <div class="card">
-            <h2 data-en="Address" data-fr="Adresse" data-ar="العنوان">Address</h2>
-            <p>735 A Rue Labelle, Saint-Jérôme, QC J7Z 5M2</p>
+            <h2 data-en="Get in Touch" data-fr="Contactez-nous" data-ar="معلومات التواصل">Get in Touch</h2>
+            <p><strong><i class="fas fa-map-marker-alt"></i></strong> 735 A Rue Labelle, Saint-Jérôme, QC J7Z 5M2</p>
+            <p><strong><i class="fas fa-phone"></i></strong> (450) 694-2206</p>
+            <p><strong><i class="fas fa-envelope"></i></strong> masjidrivnord@gmail.com</p>
+            <div class="widget-social" style="text-align:left; margin-top:15px;">
+                <a href="https://www.facebook.com/share/1AmzJvjMWP/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://chat.whatsapp.com/I94Uq8UrA2m0HjQVRyhX6O" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
         </div>
         <div class="card">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2784.148135835694!2d-74.0044812!3d45.778216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccf2ce905260f85%3A0x6734139f4083a213!2s735%20Rue%20Labelle%2C%20Saint-J%C3%A9r%C3%B4me%2C%20QC%20J7Z%205M2!5e0!3m2!1sen!2sca!4v1710460000000!5m2!1sen!2sca" width="100%" height="350" style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="http://googleusercontent.com/maps.google.com/8" width="100%" height="300" style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </section>
 </main>
