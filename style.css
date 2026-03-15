@@ -124,3 +124,8 @@ main {
     nav a { font-size: 0.7rem; margin: 0 5px; }
 }
 
+.manual-news img {
+    max-height: 450px; /* Keeps it the same height as the Facebook widget */
+    object-fit: contain;
+    background: #eee;
+}

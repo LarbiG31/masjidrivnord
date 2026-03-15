@@ -1,67 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Masjid Riv Nord</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-
-<div class="lang-switcher">
-    <button onclick="setLang('en')">EN</button>
-    <button onclick="setLang('fr')">FR</button>
-    <button onclick="setLang('ar')">AR</button>
-</div>
-
-<header class="hero">
-    <img src="logo.png" class="logo-corner" alt="Logo">
-    <div class="hero-content">
-        <h1 data-en="Masjid Riv Nord" data-fr="Masjid Riv Nord" data-ar="مسجد ريف نور">Masjid Riv Nord</h1>
-        <nav>
-            <a href="index.html" data-en="Home" data-fr="Accueil" data-ar="الرئيسية">Home</a>
-            <a href="prayer.html" data-en="Prayer Times" data-fr="Heures de prière" data-ar="مواقيت الصلاة">Prayer Times</a>
-            <a href="contact.html" data-en="Contact" data-fr="Contact" data-ar="اتصل بنا">Contact</a>
-        </nav>
+<section class="grid">
+    <div class="card">
+        <h3 data-en="Community Announcements" data-fr="Annonces de la communauté" data-ar="إعلانات المجتمع">Community Announcements</h3>
+        <div class="manual-news">
+            <img src="news/latest.png" alt="Latest Update" style="width:100%; border-radius:5px; border: 1px solid #ddd;">
+            <p style="font-size: 0.8rem; color: #666; margin-top: 10px;" data-en="Check our WhatsApp for more details." data-fr="Consultez notre WhatsApp pour plus de détails." data-ar="تحقق من الواتساب لمزيد من التفاصيل.">Check our WhatsApp for more details.</p>
+        </div>
     </div>
-</header>
 
-<main>
-    <section class="welcome-section">
-        <h2 data-en="Welcome" data-fr="Bienvenue" data-ar="مرحبا بكم">Welcome</h2>
-        <p data-en="Masjid Riv Nord serves the Muslim community of Saint-Jérôme." data-fr="Masjid Riv Nord sert la communauté musulmane de Saint-Jérôme." data-ar="مسجد ريف نور يخدم الجالية المسلمة في سان جيروم.">Masjid Riv Nord serves the Muslim community of Saint-Jérôme.</p>
-    </section>
-
-    <section class="grid">
-        <div class="card">
-            <h3 data-en="Latest News" data-fr="Nouvelles" data-ar="آخر الأخبار">Latest News</h3>
-            <div id="fb-root"></div>
-            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0"></script>
-            <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=100086333900344" data-tabs="timeline" data-height="400" data-small-header="true" data-adapt-container-width="true"></div>
+    <div class="card">
+        <h3 data-en="Facebook Updates" data-fr="Mises à jour Facebook" data-ar="تحديثات فيسبوك">Facebook Updates</h3>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0"></script>
+        <div class="fb-page" 
+            data-href="https://www.facebook.com/profile.php?id=100086333900344" 
+            data-tabs="timeline" 
+            data-height="450" 
+            data-small-header="true" 
+            data-adapt-container-width="true" 
+            data-hide-cover="false">
         </div>
-        <div class="card">
-            <h3 data-en="Donate" data-fr="Donner" data-ar="تبرع">Donate</h3>
-            <p data-en="Support our building fund." data-fr="Soutenez notre fonds." data-ar="دعم صندوق البناء.">Support our permanent building fund.</p>
-            <a href="https://www.paypal.com" class="btn" data-en="Donate Now" data-fr="Donner maintenant" data-ar="تبرع الآن">Donate Now</a>
-        </div>
-    </section>
-
-    <section class="contact-widget">
-        <h3 data-en="Connect With Us" data-fr="Connectez avec nous" data-ar="تواصل معنا">Connect With Us</h3>
-        <div class="widget-grid">
-            <div class="widget-item"><i class="fas fa-phone"></i> (450) 694-2206</div>
-            <div class="widget-item"><i class="fas fa-envelope"></i> masjidrivnord@gmail.com</div>
-            <div class="widget-social">
-                <a href="https://www.facebook.com/share/1AmzJvjMWP/" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://chat.whatsapp.com/I94Uq8UrA2m0HjQVRyhX6O" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            </div>
-        </div>
-    </section>
-</main>
-
-<script src="script.js"></script>
-</body>
-</html>
+    </div>
+</section>
 
