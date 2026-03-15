@@ -95,3 +95,31 @@ main {
     .logo { width: 140px; }
 }
 
+/* Social Media Icons Styling */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.8rem;
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #25D366; /* WhatsApp Green on hover */
+}
+
+.social-icons a .fa-facebook:hover {
+    color: #1877F2; /* Facebook Blue on hover */
+}
+
+/* Ensure the Facebook widget fits nicely */
+.fb-page {
+    width: 100% !important;
+}
+
+

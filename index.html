@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Masjid Riv Nord</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0"></script>
 
 <div class="lang-switcher">
     <button onclick="setLang('en')">EN</button>
@@ -24,6 +28,10 @@
             <a href="prayer.html" data-en="Prayer Times" data-fr="Heures de prière" data-ar="مواقيت الصلاة">Prayer Times</a>
             <a href="contact.html" data-en="Contact" data-fr="Contact" data-ar="اتصل بنا">Contact</a>
         </nav>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/share/1AmzJvjMWP/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://chat.whatsapp.com/I94Uq8UrA2m0HjQVRyhX6O" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
     </div>
 </header>
 
@@ -35,13 +43,22 @@
 
     <section class="grid">
         <div class="card">
-            <h3 data-en="Arabic School" data-fr="École d'arabe" data-ar="المدرسة العربية">Arabic School</h3>
-            <p data-en="Registration is open." data-fr="L'inscription est ouverte." data-ar="التسجيل مفتوح.">Registration is open for the new semester.</p>
+            <h3 data-en="Latest News" data-fr="Dernières Nouvelles" data-ar="آخر الأخبار">Latest News</h3>
+            <div class="fb-page" 
+                data-href="https://www.facebook.com/profile.php?id=100086333900344" 
+                data-tabs="timeline" 
+                data-width="" 
+                data-height="500" 
+                data-small-header="true" 
+                data-adapt-container-width="true" 
+                data-hide-cover="false" 
+                data-show-facepile="false">
+            </div>
         </div>
         <div class="card">
             <h3 data-en="Donate" data-fr="Donner" data-ar="تبرع">Donate</h3>
             <p data-en="Support our permanent building fund." data-fr="Soutenez notre fonds de bâtiment." data-ar="دعم صندوق بناء المسجد.">Support our permanent building fund.</p>
-            <a href="https://www.paypal.com" class="btn" data-en="Donate" data-fr="Donner" data-ar="تبرع">Donate Now</a>
+            <a href="https://www.paypal.com" class="btn" data-en="Donate Now" data-fr="Donner maintenant" data-ar="تبرع الآن">Donate Now</a>
         </div>
     </section>
 </main>
