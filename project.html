@@ -1,12 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Building Project - Masjid Riv Nord</title>
+    <title>Projet - Masjid Riv Nord</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Slideshow Styles */
+        .slideshow-container { position: relative; max-width: 100%; margin: auto; overflow: hidden; border-radius: 10px; }
+        .mySlides { display: none; }
+        .mySlides img { width: 100%; border-radius: 10px; display: block; }
+        
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .next { right: 0; border-radius: 3px 0 0 3px; }
+        .prev:hover, .next:hover { background-color: rgba(0,0,0,0.8); }
+    </style>
 </head>
 <body>
 
@@ -18,14 +42,13 @@
 
 <header class="hero">
     <img src="logo.png" class="logo-corner" alt="Logo">
-    <h1 data-en="Building Project" data-fr="Projet de Bâtiment" data-ar="مشروع بناء المسجد">Building Project</h1>
+    <h1 data-en="Building Project" data-fr="Projet de Bâtiment" data-ar="مشروع بناء المسجد">Projet de Bâtiment</h1>
     <nav>
-    <a href="index.html" data-en="Home" data-fr="Accueil" data-ar="الرئيسية">Home</a>
-    <a href="project.html" data-en="Project" data-fr="Projet" data-ar="المشروع">Project</a>
-    <a href="prayer.html" data-en="Prayer Times" data-fr="Heures de prière" data-ar="مواقيت الصلاة">Prayer Times</a>
-    <a href="contact.html" data-en="Contact" data-fr="Contact" data-ar="اتصل بنا">Contact</a>
-</nav>
-
+        <a href="index.html" data-en="Home" data-fr="Accueil" data-ar="الرئيسية">Accueil</a>
+        <a href="project.html" data-en="Project" data-fr="Projet" data-ar="المشروع">Projet</a>
+        <a href="prayer.html" data-en="Prayer Times" data-fr="Heures de prière" data-ar="مواقيت الصلاة">Heures de prière</a>
+        <a href="contact.html" data-en="Contact" data-fr="Contact" data-ar="اتصل بنا">Contact</a>
+    </nav>
 </header>
 
 <main>
@@ -40,9 +63,11 @@
             <button onclick="showMedia('video')" class="btn" style="background:#444;">Video</button>
         </div>
 
-        <div id="media-photo">
-            <img src="Project/image1.jpg" style="width:100%; border-radius:10px; margin-bottom:10px;">
-            <img src="Project/image2.jpg" style="width:100%; border-radius:10px;">
+        <div id="media-photo" class="slideshow-container">
+            <div class="mySlides"><img src="Project/image1.jpg"></div>
+            <div class="mySlides"><img src="Project/image2.jpg"></div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
 
         <div id="media-video" style="display:none;">
@@ -50,12 +75,33 @@
         </div>
     </section>
 </main>
+
 <script src="script.js"></script>
 <script>
+    // Media toggle logic
     function showMedia(type) {
         document.getElementById('media-photo').style.display = (type === 'photo') ? 'block' : 'none';
         document.getElementById('media-video').style.display = (type === 'video') ? 'block' : 'none';
     }
+
+    // Slideshow Logic
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+        let slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slides[slideIndex-1].style.display = "block";  
+    }
 </script>
 </body>
 </html>
+
