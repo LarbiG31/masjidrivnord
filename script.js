@@ -4,7 +4,9 @@ function setLang(lang) {
     });
     localStorage.setItem('prefLang', lang);
 }
+
 window.onload = () => {
-    setLang(localStorage.getItem('prefLang') || 'en');
+    const saved = localStorage.getItem('prefLang') || 'en';
+    setLang(saved);
 };
 

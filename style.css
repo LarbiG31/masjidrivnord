@@ -9,14 +9,15 @@ body {
     background: var(--light-grey);
 }
 
+/* Floating Language Switcher - Positioned above everything */
 .lang-switcher {
     position: absolute;
     top: 5px;
     right: 5px;
     z-index: 1000;
-    background: rgba(255,255,255,0.9);
+    background: rgba(255,255,255,0.95);
     padding: 2px 8px;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
 .lang-switcher button {
@@ -25,69 +26,72 @@ body {
     padding: 5px;
     font-weight: bold;
     color: var(--primary-green);
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     cursor: pointer;
 }
 
+/* Identical Hero Header for all pages */
 .hero {
     background: var(--primary-green);
     color: white;
-    padding: 50px 10px 30px;
+    padding: 60px 10px 40px;
     text-align: center;
-}
-
-.small-hero {
-    padding: 40px 10px 20px;
 }
 
 .hero h1 {
     margin: 10px 0;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 .logo {
-    width: 150px;
+    width: 180px;
+    margin-bottom: 10px;
 }
 
 nav a {
     color: white;
-    margin: 0 10px;
+    margin: 0 15px;
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: bold;
 }
 
+/* Content Area - No Overlap with Hero */
 main {
     max-width: 1100px;
-    margin: -20px auto 40px;
+    margin: 20px auto 40px; /* Removed negative margin to prevent overlap */
     padding: 0 15px;
 }
 
 .welcome-section, .card {
     background: white;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     margin-bottom: 20px;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 .btn {
     display: inline-block;
     background: var(--primary-green);
     color: white;
-    padding: 10px 20px;
+    padding: 12px 25px;
     border-radius: 5px;
     text-decoration: none;
+    margin-top: 15px;
 }
 
+/* Responsive fixes */
 @media (max-width: 600px) {
-    .hero h1 { font-size: 1.4rem; }
-    nav a { font-size: 0.7rem; margin: 0 5px; }
+    .hero { padding-top: 80px; }
+    .hero h1 { font-size: 1.5rem; }
+    nav a { font-size: 0.75rem; margin: 0 8px; }
+    .logo { width: 140px; }
 }
 
