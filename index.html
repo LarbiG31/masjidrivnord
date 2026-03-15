@@ -10,6 +10,9 @@
 </head>
 <body>
 
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0"></script>
+
 <div class="lang-switcher">
     <button onclick="setLang('en')">EN</button>
     <button onclick="setLang('fr')">FR</button>
@@ -23,17 +26,18 @@
             <h1 data-en="Masjid Riv Nord" data-fr="Masjid Riv Nord" data-ar="مسجد ريف نور">Masjid Riv Nord</h1>
         </div>
         <nav class="header-right">
-            <a href="index.html" data-en="Home" data-fr="Accueil" data-ar="الرئيسية">Home</a>
-            <a href="prayer.html" data-en="Prayer" data-fr="Prière" data-ar="الصلاة">Prayer</a>
-            <a href="contact.html" data-en="Contact" data-fr="Contact" data-ar="اتصل">Contact</a>
-            <span class="social-links">
+            <div class="nav-links">
+                <a href="index.html" data-en="Home" data-fr="Accueil" data-ar="الرئيسية">Home</a>
+                <a href="prayer.html" data-en="Prayer" data-fr="Prière" data-ar="الصلاة">Prayer</a>
+                <a href="contact.html" data-en="Contact" data-fr="Contact" data-ar="اتصل">Contact</a>
+            </div>
+            <div class="social-links">
                 <a href="https://www.facebook.com/share/1AmzJvjMWP/" target="_blank"><i class="fab fa-facebook"></i></a>
                 <a href="https://chat.whatsapp.com/I94Uq8UrA2m0HjQVRyhX6O" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            </span>
+            </div>
         </nav>
     </div>
 </header>
-
 
 <main>
     <section class="welcome-section">
@@ -44,9 +48,14 @@
     <section class="grid">
         <div class="card">
             <h3 data-en="Latest News" data-fr="Nouvelles" data-ar="آخر الأخبار">Latest News</h3>
-            <div id="fb-root"></div>
-            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0"></script>
-            <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=100086333900344" data-tabs="timeline" data-height="400" data-small-header="true" data-adapt-container-width="true"></div>
+            <div class="fb-page" 
+                data-href="https://www.facebook.com/profile.php?id=100086333900344" 
+                data-tabs="timeline" 
+                data-height="450" 
+                data-small-header="true" 
+                data-adapt-container-width="true" 
+                data-hide-cover="false">
+            </div>
         </div>
         <div class="card">
             <h3 data-en="Donate" data-fr="Donner" data-ar="تبرع">Donate</h3>

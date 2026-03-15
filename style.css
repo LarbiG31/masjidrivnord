@@ -9,7 +9,6 @@ body {
     background: var(--light-grey);
 }
 
-/* 1. Language Bar - Keeps it separate so it doesn't overlap */
 .lang-switcher {
     background: #0a5231;
     text-align: right;
@@ -26,11 +25,10 @@ body {
     margin-left: 10px;
 }
 
-/* 2. Compact Green Header */
 header {
-    background: var(--primary-green);
+    background: var(--primary-green) !important;
     color: white;
-    padding: 8px 0; /* Thin padding */
+    padding: 8px 0;
 }
 
 .header-container {
@@ -48,15 +46,13 @@ header {
     gap: 10px;
 }
 
-/* FIX: Forces the logo to be small so it doesn't overlap */
 .logo-small {
     height: 40px; 
     width: auto;
-    display: block;
 }
 
 .header-left h1 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin: 0;
     white-space: nowrap;
 }
@@ -67,21 +63,20 @@ header {
     gap: 15px;
 }
 
-nav a {
+.nav-links a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     margin-left: 12px;
 }
 
 .social-links a {
     color: white;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-left: 8px;
 }
 
-/* 3. Main Content */
 main {
     max-width: 1100px;
     margin: 20px auto;
@@ -111,13 +106,10 @@ main {
     text-decoration: none;
 }
 
-/* Mobile Fix: Stack items if the screen is too narrow */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .header-container {
         flex-direction: column;
         gap: 5px;
     }
-    .header-left h1 { font-size: 1rem; }
-    nav a { font-size: 0.75rem; margin: 0 5px; }
 }
 
