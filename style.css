@@ -9,15 +9,16 @@ body {
     background: var(--light-grey);
 }
 
-/* Restored Floating Language Buttons */
+/* Floating Language Buttons */
 .lang-switcher {
     position: absolute;
     top: 15px;
     right: 15px;
     z-index: 1000;
-    background: rgba(255,255,255,0.9);
+    background: rgba(255,255,255,0.95);
     padding: 5px 10px;
     border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .lang-switcher button {
@@ -29,20 +30,21 @@ body {
     font-size: 0.8rem;
 }
 
-/* Expanded Green Section */
+/* Restored Green Header */
 .hero {
     background: var(--primary-green);
     color: white;
-    padding: 60px 20px;
+    padding: 60px 20px 40px; /* Increased bottom padding */
     text-align: center;
     position: relative;
 }
 
+/* FIX: Small Logo in corner */
 .logo-corner {
     position: absolute;
     top: 15px;
     left: 15px;
-    height: 60px;
+    height: 50px; /* Controlled height */
     width: auto;
 }
 
@@ -57,13 +59,13 @@ nav a {
     margin: 0 15px;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
-/* Main Content */
+/* FIX: Removed negative margin to prevent overlapping the menu */
 main {
     max-width: 1100px;
-    margin: -30px auto 40px; /* Overlap effect from previous version */
+    margin: 20px auto 40px; 
     padding: 0 15px;
     position: relative;
     z-index: 5;
@@ -73,7 +75,7 @@ main {
     background: white;
     padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     margin-bottom: 25px;
 }
 
@@ -83,7 +85,6 @@ main {
     gap: 20px;
 }
 
-/* New Contact Widget Styling */
 .contact-widget {
     text-align: center;
 }
@@ -114,12 +115,12 @@ main {
     padding: 12px 24px;
     border-radius: 5px;
     text-decoration: none;
-    margin-top: 10px;
 }
 
 @media (max-width: 768px) {
+    .hero { padding-top: 80px; }
     .hero h1 { font-size: 1.6rem; }
-    .logo-corner { height: 45px; }
-    nav a { font-size: 0.75rem; margin: 0 5px; }
+    .logo-corner { height: 40px; }
+    nav a { font-size: 0.7rem; margin: 0 5px; }
 }
 
