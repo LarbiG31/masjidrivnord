@@ -10,16 +10,13 @@
 </head>
 <body>
 
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0"></script>
-
 <div class="lang-switcher">
     <button onclick="setLang('en')">EN</button>
     <button onclick="setLang('fr')">FR</button>
     <button onclick="setLang('ar')">AR</button>
 </div>
 
-<header class="compact-header">
+<header>
     <div class="header-container">
         <div class="header-left">
             <img src="logo.png" class="logo-small" alt="Logo">
@@ -48,14 +45,9 @@
     <section class="grid">
         <div class="card">
             <h3 data-en="Latest News" data-fr="Nouvelles" data-ar="آخر الأخبار">Latest News</h3>
-            <div class="fb-page" 
-                data-href="https://www.facebook.com/profile.php?id=100086333900344" 
-                data-tabs="timeline" 
-                data-height="450" 
-                data-small-header="true" 
-                data-adapt-container-width="true" 
-                data-hide-cover="false">
-            </div>
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0"></script>
+            <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=100086333900344" data-tabs="timeline" data-height="400" data-small-header="true" data-adapt-container-width="true"></div>
         </div>
         <div class="card">
             <h3 data-en="Donate" data-fr="Donner" data-ar="تبرع">Donate</h3>

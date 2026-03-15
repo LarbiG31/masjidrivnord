@@ -9,77 +9,79 @@ body {
     background: var(--light-grey);
 }
 
-/* Compact Header */
-.compact-header {
-    background: var(--primary-green);
+/* THE FIX: Force the Green Bar to show */
+header {
+    background-color: var(--primary-green) !important;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 0;
+    width: 100%;
 }
 
 .header-container {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
 }
 
 .header-left {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
 }
 
 .logo-small {
-    height: 50px; /* Small logo for top left */
+    height: 45px;
     width: auto;
 }
 
 .header-left h1 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .header-right {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
-    margin-left: 15px;
+    margin-left: 12px;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 .social-links a {
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-left: 10px;
 }
 
-/* Lang Switcher Over Header */
+/* Language Switcher */
 .lang-switcher {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    z-index: 1100;
-    background: rgba(255,255,255,0.2);
-    border-radius: 10px;
+    text-align: right;
+    padding: 5px 20px;
+    background: #0a5231; /* Slightly darker green */
 }
 
 .lang-switcher button {
     border: none;
     background: none;
-    color: white;
-    padding: 5px;
+    color: rgba(255,255,255,0.8);
+    padding: 0 8px;
     font-size: 0.7rem;
     cursor: pointer;
+    font-weight: bold;
 }
 
-/* Main Content */
+/* Content Sections */
 main {
     max-width: 1100px;
     margin: 20px auto;
@@ -90,7 +92,7 @@ main {
     background: white;
     padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     margin-bottom: 20px;
 }
 
@@ -107,21 +109,14 @@ main {
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
-    margin-top: 10px;
 }
 
-/* Mobile Fixes */
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
-        text-align: center;
+        gap: 10px;
     }
-    .header-left {
-        margin-bottom: 10px;
-    }
-    .nav-links a {
-        margin: 0 5px;
-        font-size: 0.8rem;
-    }
+    .header-left h1 { font-size: 1rem; }
 }
 
