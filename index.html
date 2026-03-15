@@ -48,11 +48,22 @@
         </div>
 
         <div class="card">
-            <h3 data-en="Donate" data-fr="Donner" data-ar="تبرع">Donate</h3>
-            <p data-en="Support our permanent building fund." data-fr="Soutenez notre fonds de bâtiment." data-ar="دعم صندوق بناء المسجد.">Support our permanent building fund.</p>
-            <a href="https://www.paypal.com" class="btn" data-en="Donate Now" data-fr="Donner maintenant" data-ar="تبرع الآن">Donate Now</a>
-        </div>
-    </section>
+    <h3 data-en="Building Fund Goal" data-fr="Objectif Fond de Bâtiment" data-ar="هدف صندوق بناء المسجد">Building Fund Goal</h3>
+    
+    <div class="progress-container" style="background: #e0e0e0; border-radius: 20px; margin: 20px 0; height: 25px; position: relative; overflow: hidden;">
+        <div id="progress-bar" class="progress-fill" style="background: var(--primary-green); width: 0%; height: 100%; transition: width 1.5s ease-in-out;"></div>
+    </div>
+    
+    <div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 15px; font-size: 0.9rem;">
+        <span>$<span id="collected-amount">0</span></span>
+        <span>$<span id="goal-amount">0</span></span>
+    </div>
+
+    <p data-en="Help us secure a permanent home for our community." data-fr="Aidez-nous à sécuriser un foyer permanent pour notre communauté." data-ar="ساعدنا في تأمين مقر دائم لمجتمعنا.">Help us secure a permanent home for our community.</p>
+    
+    <a href="https://www.paypal.com" class="btn" style="width: 100%; text-align: center; box-sizing: border-box;" data-en="Donate Now" data-fr="Donner maintenant" data-ar="تبرع الآن">Donate Now</a>
+</div>
+
 
     <section class="contact-widget">
         <h3 data-en="Connect With Us" data-fr="Contactez-nous" data-ar="تواصل معنا">Connect With Us</h3>
