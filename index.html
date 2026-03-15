@@ -1,77 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Masjid Riv Nord</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masjid Riv Nord</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<header>
-
-<img src="images/logo.png" class="logo">
-
-<h1>Masjid Riv Nord</h1>
-
-<nav>
-<a href="index.html">Home</a>
-<a href="prayer.html">Prayer Times</a>
-<a href="contact.html">Contact</a>
-</nav>
-
-<div class="lang">
-<button onclick="setLang('en')">English</button>
-<button onclick="setLang('fr')">Français</button>
-<button onclick="setLang('ar')">العربية</button>
+<div class="lang-switcher">
+    <button onclick="setLang('en')">EN</button>
+    <button onclick="setLang('fr')">FR</button>
+    <button onclick="setLang('ar')">AR</button>
 </div>
 
+<header class="hero">
+    <div class="hero-content">
+        <img src="logo.png" class="logo" alt="Masjid Riv Nord Logo">
+        <h1 data-en="Masjid Riv Nord" data-fr="Masjid Riv Nord" data-ar="مسجد ريف نور">Masjid Riv Nord</h1>
+        <nav>
+            <a href="index.html" data-en="Home" data-fr="Accueil" data-ar="الرئيسية">Home</a>
+            <a href="prayer.html" data-en="Prayer Times" data-fr="Heures de prière" data-ar="مواقيت الصلاة">Prayer Times</a>
+            <a href="contact.html" data-en="Contact" data-fr="Contact" data-ar="اتصل بنا">Contact</a>
+        </nav>
+    </div>
 </header>
 
-<section>
+<main>
+    <section class="welcome-section">
+        <h2 data-en="Welcome to the Community" data-fr="Bienvenue dans la communauté" data-ar="مرحبا بكم في المجتمع">Welcome to the Community</h2>
+        <p data-en="Masjid Riv Nord serves the Muslim community of Saint-Jérôme." data-fr="Masjid Riv Nord sert la communauté musulmane de Saint-Jérôme." data-ar="مسجد ريف نور يخدم الجالية المسلمة في سان جيروم.">Masjid Riv Nord serves the Muslim community of Saint-Jérôme.</p>
+    </section>
 
-<h2 data-en="Welcome"
-data-fr="Bienvenue"
-data-ar="مرحبا بكم">
-Welcome
-</h2>
-
-<p data-en="Masjid Riv Nord serves the Muslim community of Saint-Jérôme."
-data-fr="Masjid Riv Nord sert la communauté musulmane de Saint-Jérôme."
-data-ar="مسجد ريف نور يخدم الجالية المسلمة في سان جيروم.">
-Masjid Riv Nord serves the Muslim community of Saint-Jérôme.
-</p>
-
-</section>
-
-<section>
-
-<h2 data-en="News"
-data-fr="Nouvelles"
-data-ar="الأخبار">
-News
-</h2>
-
-<ul>
-<li>Arabic school registration open</li>
-<li>Project: Buying a permanent mosque building</li>
-<li>Community events every weekend</li>
-</ul>
-
-</section>
-
-<section>
-
-<h2>Donate</h2>
-
-<a class="btn" href="https://www.paypal.com">
-Support the Mosque
-</a>
-
-</section>
+    <section class="grid">
+        <div class="card">
+            <h3 data-en="Arabic School" data-fr="École d'arabe" data-ar="المدرسة العربية">Arabic School</h3>
+            <p data-en="Registration is now open for the new semester." data-fr="L'inscription est maintenant ouverte pour le nouveau semestre." data-ar="التسجيل مفتوح الآن للفصل الدراسي الجديد.">Registration is now open.</p>
+        </div>
+        <div class="card">
+            <h3 data-en="Mosque Project" data-fr="Projet de Mosquée" data-ar="مشروع المسجد">Mosque Project</h3>
+            <p data-en="Support our permanent building fund." data-fr="Soutenez notre fonds de bâtiment permanent." data-ar="دعم صندوق بناء المسجد الدائم.">Support our permanent building fund.</p>
+            <a href="https://www.paypal.com" class="btn" data-en="Donate Now" data-fr="Donner maintenant" data-ar="تبرع الآن">Donate Now</a>
+        </div>
+    </section>
+</main>
 
 <script src="script.js"></script>
-
 </body>
 </html>
