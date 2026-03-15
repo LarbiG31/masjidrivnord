@@ -30,8 +30,8 @@
 
 <main>
     <section class="welcome-section">
-        <h2 data-en="Our Vision" data-fr="Notre Vision" data-ar="رؤيتنا">Our Vision</h2>
-        <p id="project-description" style="line-height: 1.6; white-space: pre-wrap;">Loading description...</p>
+        <h2 data-en="Our Vision" data-fr="Notre Vision" data-ar="رؤيتنا">Notre Vision</h2>
+        <p id="project-description" style="white-space: pre-wrap;">Chargement...</p>
     </section>
 
     <section class="card">
@@ -40,18 +40,16 @@
             <button onclick="showMedia('video')" class="btn" style="background:#444;">Video</button>
         </div>
 
-        <div id="media-photo" class="media-container">
-    <img src="project/your_photo_name.jpg" style="width:100%; border-radius:10px; margin-bottom:10px;" onerror="this.src='https://via.placeholder.com/400x300?text=Image+Coming+Soon'">
-</div>
+        <div id="media-photo">
+            <img src="Project/image1.jpg" style="width:100%; border-radius:10px; margin-bottom:10px;">
+            <img src="Project/image2.jpg" style="width:100%; border-radius:10px;">
+        </div>
 
-
-        <div id="media-video" class="media-container" style="display:none;">
+        <div id="media-video" style="display:none;">
             <iframe id="project-video-iframe" width="100%" height="450" src="" frameborder="0" allowfullscreen style="border-radius:10px;"></iframe>
         </div>
     </section>
 </main>
-
-
 <script src="script.js"></script>
 <script>
     function showMedia(type) {
